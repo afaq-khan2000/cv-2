@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-black {
+  background-color: #3f4042;
+}
+
+.bg-gray {
+  background-color: #f9fafc;
+}
+
+.image {
+  width: 10em;
+  height: 10em;
+  border-radius: 5em;
+}
+
+.text-blue {
+  color: #2e6f96;
+}
+
+.text-gray {
+  color: #dfe0e2;
+}
+
+.divider {
+  width: 100%;
+  background-color: #2e6f96;
+  height: 1px;
+}
