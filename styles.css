@@ -30,3 +30,7 @@ body{
   background-color: #2e6f96;
   height: 1px;
 }
+
+.error{
+  border: 1px solid red;
+}

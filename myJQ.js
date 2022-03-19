@@ -1,6 +1,6 @@
 $(function () {
   $("#addJobBtn").click(handleAdd);
-  $("div.col-8").on("click","button.btn-danger",handleDelete);
+  $("div.experience").on("click","button.btn-danger",handleDelete);
 });
 
 function handleAdd() {
@@ -8,6 +8,32 @@ function handleAdd() {
   var newTitle = $("#titleInput").val();
   var newCompany = $("#companyInput").val();
   var newDes = $("#desInput").val();
+
+  if(!newYear){
+      $("#yearInput").addClass("error");
+      return;
+  }
+  else if(!newTitle){
+    $("#titleInput").addClass("error");
+    return;
+  }
+  else if(!newCompany){
+    $("#companyInput").addClass("error");
+    return;
+  }
+  else if(!newDes){
+    $("#desInput").addClass("error");
+    return;
+  }
+
+  $("#yearInput").removeClass("error");
+  $("#yearInput").val("");
+  $("#titleInput").removeClass("error");
+  $("#titleInput").val("");
+  $("#companyInput").removeClass("error");
+  $("#companyInput").val("");
+  $("#desInput").removeClass("error");
+  $("#desInput").val("");
 
   $("#experience").append(`<div class="row expRow">
   <div class="col-4">
