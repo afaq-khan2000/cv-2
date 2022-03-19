@@ -9,7 +9,7 @@ function handleAdd() {
   var newCompany = $("#companyInput").val();
   var newDes = $("#desInput").val();
 
-  $("#experience").append(`<div class="row">
+  $("#experience").append(`<div class="row expRow">
   <div class="col-4">
     <p>${newYear}</p>
   </div>
@@ -31,5 +31,5 @@ function handleAdd() {
 }
 
 function handleDelete(){
-    $("div.row").remove();
+    $("div.expRow").remove();
 }
