@@ -22,9 +22,13 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="myJQ.js"></script>
+    <!-- <script src="./script.js"></script> -->
   </head>
   <body class="container-fluid">
-    <div class="row">
+    <div id="mainRow" class="row">
       <!-- Left Side -->
       <div class="col-lg-4 col-sm-12 bg-black d-flex align-items-center">
         <div class="text-center text-white">
@@ -51,13 +55,53 @@
       </div>
 
       <!-- Right Side -->
-      <div class="col-lg-8 col-sm-12 bg-gray">
+      <div id="rightContainer" class="col-lg-8 col-sm-12 bg-gray">
         <!-- Experience -->
 
-        <div class="experience mt-5 ml-5">
+        <div id="experience" class="experience mt-5 ml-5">
           <h2 class="text-blue">
             <i class="bi bi-briefcase-fill mr-3"></i>Experience
           </h2>
+
+          <!-- Job Form -->
+
+          <div class="form-group my-5">
+            <h4 class="text-blue">Post A Job</h4>
+            <input
+              id="yearInput"
+              type="text"
+              class="form-control mt-3"
+              placeholder="Enter Duration e.g 2000 - 2002"
+              style="width: 30%; display: inline"
+            />
+            <input
+              id="titleInput"
+              type="text"
+              class="form-control mt-3"
+              placeholder="Enter Job Title"
+              style="width: 60%; display: inline"
+            />
+            <input
+              id="companyInput"
+              type="text"
+              class="form-control mt-3"
+              placeholder="Enter Company Name"
+              style="width: 60%; display: inline"
+            />
+            <input
+              id="desInput"
+              type="text"
+              class="form-control mt-3"
+              placeholder="Enter Job Description"
+              style="width: 60%; display: inline"
+            />
+            <button type="button" id="addJobBtn" class="btn btn-dark mx-3">
+              Post Job
+            </button>
+          </div>
+
+          <!-- Job Form End -->
+
           <div style="background-color: #dfe0e2" class="divider mt-3"></div>
           <div class="row mt-5">
             <div class="col-4">
@@ -72,6 +116,13 @@
                 exercitationem eaque tempora quo nobis? Possimus libero commodi
                 atque nostrum est harum odio quia!
               </p>
+              <button
+                type="button"
+                onclick="handleDelete(event)"
+                class="btn btn-danger my-3"
+              >
+                Delete Job
+              </button>
             </div>
           </div>
           <div class="row">
@@ -87,6 +138,13 @@
                 exercitationem eaque tempora quo nobis? Possimus libero commodi
                 atque nostrum est harum odio quia!
               </p>
+              <button
+                type="button"
+                onclick="handleDelete(event)"
+                class="btn btn-danger my-3"
+              >
+                Delete Job
+              </button>
             </div>
           </div>
           <div class="row">
@@ -102,6 +160,13 @@
                 exercitationem eaque tempora quo nobis? Possimus libero commodi
                 atque nostrum est harum odio quia!
               </p>
+              <button
+                type="button"
+                onclick="handleDelete(event)"
+                class="btn btn-danger my-3"
+              >
+                Delete Job
+              </button>
             </div>
           </div>
         </div>
