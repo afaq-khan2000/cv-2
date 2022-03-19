@@ -1,5 +1,6 @@
 $(function () {
   $("#addJobBtn").click(handleAdd);
+  $("div.col-8").on("click","button.btn-danger",handleDelete);
 });
 
 function handleAdd() {
@@ -27,4 +28,8 @@ function handleAdd() {
     </button>
   </div>
 </div>`);
+}
+
+function handleDelete(){
+    $(this).remove();
 }
