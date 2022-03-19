@@ -31,5 +31,5 @@ function handleAdd() {
 }
 
 function handleDelete(){
-    $(this.$(div.expRow)).remove();
+    $(this.parent().parent().parent()).remove();
 }
