@@ -13,6 +13,7 @@ function handleAdd() {
     $("#yearInput").addClass("error");
     return;
   }
+  
   if (!newTitle) {
     $("#titleInput").addClass("error");
     return;
