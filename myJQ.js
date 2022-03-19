@@ -13,15 +13,15 @@ function handleAdd() {
       $("#yearInput").addClass("error");
       return;
   }
-  else if(!newTitle){
+  if(!newTitle){
     $("#titleInput").addClass("error");
     return;
   }
-  else if(!newCompany){
+  if(!newCompany){
     $("#companyInput").addClass("error");
     return;
   }
-  else if(!newDes){
+  if(!newDes){
     $("#desInput").addClass("error");
     return;
   }
