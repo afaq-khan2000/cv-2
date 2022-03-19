@@ -1,6 +1,6 @@
 $(function () {
   $("#addJobBtn").click(handleAdd);
-  $("div.col-8").on("click","button.btn-danger",handleDelete);
+  $("div.row").on("click","button.btn-danger",handleDelete);
 });
 
 function handleAdd() {
