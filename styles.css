@@ -35,7 +35,7 @@ body{
   border: 1px solid red;
 }
 
-@media only screen and (max-width : 576px) {
+@media only screen and (max-width : 992px) {
   .left-container{
     position: relative;
   }
