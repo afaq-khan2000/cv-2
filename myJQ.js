@@ -31,5 +31,5 @@ function handleAdd() {
 }
 
 function handleDelete(){
-    $(this.parent().parent().parent()).remove();
+    $(this).parent().parent().remove();
 }
