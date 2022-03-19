@@ -1,6 +1,6 @@
 $(function () {
   $("#addJobBtn").click(handleAdd);
-  $("div.experience").on("click","button.btn-danger",handleDelete);
+  $("div.experience").on("click", "button.btn-danger", handleDelete);
 });
 
 function handleAdd() {
@@ -9,19 +9,19 @@ function handleAdd() {
   var newCompany = $("#companyInput").val();
   var newDes = $("#desInput").val();
 
-  if(!newYear){
-      $("#yearInput").addClass("error");
-      return;
+  if (!newYear) {
+    $("#yearInput").addClass("error");
+    return;
   }
-  if(!newTitle){
+  if (!newTitle) {
     $("#titleInput").addClass("error");
     return;
   }
-  if(!newCompany){
+  if (!newCompany) {
     $("#companyInput").addClass("error");
     return;
   }
-  if(!newDes){
+  if (!newDes) {
     $("#desInput").addClass("error");
     return;
   }
@@ -56,6 +56,6 @@ function handleAdd() {
 </div>`);
 }
 
-function handleDelete(){
-    $(this).parent().parent().remove();
+function handleDelete() {
+  $(this).parent().parent().remove();
 }
